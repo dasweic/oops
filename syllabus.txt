@@ -1,1 +1,4 @@
 mbmu, jodhpur
+
+to execute code in cpp in terminal
+g++ a.cpp -o a && ./a
