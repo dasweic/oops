@@ -3,6 +3,10 @@
 using namespace std;
 
 class Teacher {
+private:
+    //private properties or attributes
+    int salary;
+
 public:
     //properties or attributes
     string name;
@@ -15,6 +19,21 @@ public:
         age = a;
         subject = s;
     };
+
+    //setter
+    void setSalary(int s) {
+        salary = s;
+    };
+
+    //getter
+    int getSalary() {
+        return salary;
+    };
+
+
+
+
+
 };
 
 int main() {
@@ -22,8 +41,8 @@ int main() {
     t1.name = "ram kishor";
     t1.age = 40;
     t1.subject = "OOPS";
-    cout << "Teacher Name: " << t1.name << endl;
-    cout << "Teacher Age: " << t1.age << endl;
-    cout << "Teacher Subject: " << t1.subject << endl;
+    t1.setSalary(50000); // This is the correct way to set the salary
+    t1.getSalary(); // This is the correct way to get the salary
+    cout << t1.getSalary() << endl; // This will print the salary of the teacher
     return 0;
 }
